@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* font-family: 'Inter', sans-serif; */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Inter', sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    max-width: 390px;
+    margin: 40px auto;
+    padding: 30px 20px 0px 20px ;
+    box-shadow: 2px 5px 10px hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 12px;
+    align-items: center;
+    color: whitesmoke;
+
+}
+
+
+.img img{
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+}
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+    margin: 15px;
+}
+.avatar h2{
+    margin: 0;
+    padding: 10px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+.avatar p{
+    margin: 0;
+    padding: 0;
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#avatar-about{
+    margin-bottom: 25px;
+}
+
+#avatar-about p{
+    font-size: 14px;
+    
+
+}
+
+.Social-media{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+}
+.Social-links{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 15px 28px;
+    margin-bottom: 22px;
+    background-color:hsl(0, 0%, 20%);
+    border-radius: 10px;
+    transition: background-color 0.2s ;
+   
+}
+.Social-links a{
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color 0.2s;
+    font-weight: 700;
+    
+}
+.Social-links:hover {
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer ;
+}
+.Social-links:hover a{
+    color: hsl(0, 0%, 8%);
+    
+}
+
+/* adding reponsiveness */
+
+@media only screen and (max-width : 628px){
+
+    .main{
+        max-width: 300px;
+       }
+
+    .img img{
+        height: 75px;
+        width: 75px;
+    }
+
+    .avatar{
+        line-height: 0.8;
+        margin: 10px;
+    }
+    .avatar h2{
+        font-weight: 500;
+    }
+    .avatar p{
+       
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #avatar-about{
+        margin-bottom: 15px;
+    }
+    
+    #avatar-about p{
+        font-size: 11px;
+    }
+
+    .Social-links{
+        width: 200px;   
+        padding: 10px 45px;
+        margin-bottom: 18px;     
+    }
+
+    .Social-links a{
+        font-weight: 600;
+        
+    }
+ 
+    
+    
+}
+@media only screen and (max-width:375px){
+    .main{
+        max-width: 230px;
+       }
+
+    .img img{
+        height: 70px;
+        width: 70px;
+    }
+
+    .avatar{
+        line-height: 0.8;
+        margin: 10px;
+    }
+    .avatar h2{
+        font-weight: 400;
+    }
+    .avatar p{
+       
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    #avatar-about{
+        margin-bottom: 15px;
+    }
+    
+    #avatar-about p{
+        font-size: 3px;
+    }
+
+    .Social-links{
+        width: 150px;   
+        padding: 5px 40px;
+        margin-bottom: 18px;     
+    }
+
+    .Social-links a{
+        font-weight: 500;
+        
+    }
+  
+}
+
+
+
+
